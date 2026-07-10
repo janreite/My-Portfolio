@@ -12,9 +12,7 @@
   <title>Jan Rei D. Te | IT & Full-Stack Developer</title>
 
   <style>
-    /* =========================================================
-       DESIGN TOKENS
-    ========================================================= */
+    
     :root {
       --bg: #070b14;
       --bg-soft: #0b1020;
@@ -55,9 +53,7 @@
       --shadow: 0 24px 70px rgba(30, 41, 59, 0.13);
     }
 
-    /* =========================================================
-       BASE
-    ========================================================= */
+    
     *,
     *::before,
     *::after {
@@ -225,9 +221,7 @@
       transform: translateY(0);
     }
 
-    /* =========================================================
-       DECORATION
-    ========================================================= */
+    
     .page-grid {
       position: fixed;
       z-index: -2;
@@ -264,9 +258,7 @@
       background: var(--accent);
     }
 
-    /* =========================================================
-       NAVIGATION
-    ========================================================= */
+    
     .site-header {
       position: fixed;
       z-index: 1000;
@@ -400,9 +392,7 @@
       display: none;
     }
 
-    /* =========================================================
-       BUTTONS & CHIPS
-    ========================================================= */
+    
     .button {
       display: inline-flex;
       min-height: 50px;
@@ -476,9 +466,7 @@
       box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 15%, transparent);
     }
 
-    /* =========================================================
-       HERO
-    ========================================================= */
+    
     .hero {
       display: flex;
       min-height: 100vh;
@@ -763,9 +751,7 @@
       50% { transform: translateY(-10px); }
     }
 
-    /* =========================================================
-       ABOUT
-    ========================================================= */
+    
     .about-grid {
       display: grid;
       grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -864,9 +850,7 @@
       font-size: 0.9rem;
     }
 
-    /* =========================================================
-       SKILLS
-    ========================================================= */
+    
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -935,9 +919,7 @@
       font-weight: 750;
     }
 
-    /* =========================================================
-       EXPERIENCE
-    ========================================================= */
+    
     .experience-layout {
       display: grid;
       grid-template-columns: 280px minmax(0, 1fr);
@@ -1068,9 +1050,7 @@
       color: var(--muted);
     }
 
-    /* =========================================================
-       PROJECTS
-    ========================================================= */
+    
     .project-filters {
       display: flex;
       flex-wrap: wrap;
@@ -1169,6 +1149,15 @@
       height: 190px;
       border: 1px solid rgba(255, 255, 255, 0.10);
     }
+
+    .project-image {
+      width:100%;
+      height:245px;
+      object-fit:cover;
+      display:block;
+      transition:transform 400ms ease;
+    }
+    .project-card:hover .project-image{transform:scale(1.04);}
 
     .project-mockup {
       position: relative;
@@ -1341,9 +1330,7 @@
       transform: translateX(4px);
     }
 
-    /* =========================================================
-       EDUCATION
-    ========================================================= */
+    
     .education-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -1389,9 +1376,7 @@
       font-size: 0.9rem;
     }
 
-    /* =========================================================
-       CONTACT
-    ========================================================= */
+    
     .contact-wrap {
       position: relative;
       overflow: hidden;
@@ -1528,9 +1513,7 @@
       font-size: 0.75rem;
     }
 
-    /* =========================================================
-       FOOTER
-    ========================================================= */
+    
     .site-footer {
       padding: 30px 0;
       border-top: 1px solid var(--border);
@@ -1562,9 +1545,7 @@
       height: 15px;
     }
 
-    /* =========================================================
-       MODAL & TOAST
-    ========================================================= */
+    
     .modal {
       position: fixed;
       z-index: 2000;
@@ -1689,9 +1670,7 @@
       transform: translateY(0);
     }
 
-    /* =========================================================
-       REVEAL ANIMATION
-    ========================================================= */
+    
     .reveal {
       opacity: 1;
       transform: translateY(0);
@@ -1708,9 +1687,7 @@
       transform: translateY(0);
     }
 
-    /* =========================================================
-       RESPONSIVE
-    ========================================================= */
+    
     @media (max-width: 980px) {
       .nav-links {
         position: fixed;
@@ -1994,9 +1971,7 @@
   <div class="ambient ambient-one" aria-hidden="true"></div>
   <div class="ambient ambient-two" aria-hidden="true"></div>
 
-  <!-- =======================================================
-       NAVIGATION
-  ======================================================== -->
+  
   <header class="site-header" id="siteHeader">
     <nav class="navbar container" aria-label="Primary navigation">
       <a class="brand" href="#home" aria-label="Jan Rei D. Te — Home">
@@ -2035,9 +2010,7 @@
   </header>
 
   <main id="main-content">
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
+    
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-content reveal">
@@ -2121,9 +2094,7 @@
       </div>
     </section>
 
-    <!-- =====================================================
-         ABOUT
-    ====================================================== -->
+    
     <section class="section section-soft" id="about">
       <div class="container">
         <div class="section-heading reveal">
@@ -2197,9 +2168,7 @@
       </div>
     </section>
 
-    <!-- =====================================================
-         SKILLS
-    ====================================================== -->
+    
     <section class="section" id="skills">
       <div class="container">
         <div class="section-heading reveal">
@@ -2350,9 +2319,7 @@
       </div>
     </section>
 
-    <!-- =====================================================
-         EXPERIENCE
-    ====================================================== -->
+    
     <section class="section section-soft" id="experience">
       <div class="container">
         <div class="section-heading reveal">
@@ -2460,9 +2427,7 @@
       </div>
     </section>
 
-    <!-- =====================================================
-         PROJECTS
-    ====================================================== -->
+    
     <section class="section" id="projects">
       <div class="container">
         <div class="section-heading reveal">
@@ -2484,17 +2449,9 @@
 
         <div class="projects-grid" id="projectsGrid">
           <article class="project-card reveal" data-category="education fullstack">
-            <div class="project-visual" aria-hidden="true">
-              <div class="project-mockup">
-                <div class="mockup-bar"><span></span><span></span><span></span></div>
-                <div class="mockup-content">
-                  <div class="mockup-sidebar"></div>
-                  <div class="mockup-main">
-                    <span class="mockup-line accent"></span>
-                    <span class="mockup-line"></span>
-                    <span class="mockup-line medium"></span>
-                    <div class="mockup-cards"><span></span><span></span><span></span></div>
-                  </div>
+            <div class="project-visual">
+  <img src="./ocilytics.png" alt="Project screenshot" class="project-image">
+</div>
                 </div>
               </div>
             </div>
@@ -2518,17 +2475,9 @@
           </article>
 
           <article class="project-card reveal" data-category="education fullstack">
-            <div class="project-visual" aria-hidden="true">
-              <div class="project-mockup">
-                <div class="mockup-bar"><span></span><span></span><span></span></div>
-                <div class="mockup-content">
-                  <div class="mockup-sidebar"></div>
-                  <div class="mockup-main">
-                    <span class="mockup-line accent"></span>
-                    <span class="mockup-line medium"></span>
-                    <span class="mockup-line short"></span>
-                    <div class="mockup-cards"><span></span><span></span><span></span></div>
-                  </div>
+            <div class="project-visual">
+  <img src="./timeadventure.png" alt="Project screenshot" class="project-image">
+</div>
                 </div>
               </div>
             </div>
@@ -2552,17 +2501,9 @@
           </article>
 
           <article class="project-card reveal" data-category="education">
-            <div class="project-visual" aria-hidden="true">
-              <div class="project-mockup">
-                <div class="mockup-bar"><span></span><span></span><span></span></div>
-                <div class="mockup-content">
-                  <div class="mockup-sidebar"></div>
-                  <div class="mockup-main">
-                    <span class="mockup-line accent"></span>
-                    <span class="mockup-line"></span>
-                    <span class="mockup-line short"></span>
-                    <div class="mockup-cards"><span></span><span></span><span></span></div>
-                  </div>
+            <div class="project-visual">
+  <img src="./salitagisan.png" alt="Project screenshot" class="project-image">
+</div>
                 </div>
               </div>
             </div>
@@ -2586,17 +2527,9 @@
           </article>
 
           <article class="project-card reveal" data-category="operations">
-            <div class="project-visual" aria-hidden="true">
-              <div class="project-mockup">
-                <div class="mockup-bar"><span></span><span></span><span></span></div>
-                <div class="mockup-content">
-                  <div class="mockup-sidebar"></div>
-                  <div class="mockup-main">
-                    <span class="mockup-line accent"></span>
-                    <span class="mockup-line medium"></span>
-                    <span class="mockup-line"></span>
-                    <div class="mockup-cards"><span></span><span></span><span></span></div>
-                  </div>
+            <div class="project-visual">
+  <img src="./queue.png" alt="Project screenshot" class="project-image">
+</div>
                 </div>
               </div>
             </div>
@@ -2622,9 +2555,7 @@
       </div>
     </section>
 
-    <!-- =====================================================
-         EDUCATION
-    ====================================================== -->
+    
     <section class="section section-soft" id="education">
       <div class="container">
         <div class="section-heading reveal">
@@ -2657,9 +2588,7 @@
       </div>
     </section>
 
-    <!-- =====================================================
-         CONTACT
-    ====================================================== -->
+    
     <section class="section" id="contact">
       <div class="container">
         <div class="contact-wrap reveal">
@@ -2739,9 +2668,7 @@
     </div>
   </footer>
 
-  <!-- =======================================================
-       PROJECT DETAILS MODAL
-  ======================================================== -->
+  
   <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <button class="modal-close" id="modalClose" type="button" aria-label="Close project details">
@@ -2760,10 +2687,6 @@
   <script>
     (() => {
       "use strict";
-
-      // -------------------------------------------------------
-      // Elements
-      // -------------------------------------------------------
       const root = document.documentElement;
       const body = document.body;
       const header = document.getElementById("siteHeader");
@@ -2788,10 +2711,6 @@
 
       let lastFocusedElement = null;
       let toastTimer = null;
-
-      // -------------------------------------------------------
-      // Theme
-      // -------------------------------------------------------
       const safeStorage = {
         get(key) {
           try { return window.localStorage.getItem(key); }
@@ -2799,7 +2718,7 @@
         },
         set(key, value) {
           try { window.localStorage.setItem(key, value); }
-          catch { /* Theme still works for the current page session. */ }
+          catch {  }
         }
       };
 
@@ -2818,10 +2737,6 @@
         const themeColor = root.dataset.theme === "dark" ? "#0b1020" : "#f7f9fc";
         document.querySelector('meta[name="theme-color"]').setAttribute("content", themeColor);
       }
-
-      // -------------------------------------------------------
-      // Mobile menu
-      // -------------------------------------------------------
       menuButton.addEventListener("click", () => {
         const isOpen = navLinksContainer.classList.toggle("open");
         body.classList.toggle("menu-open", isOpen);
@@ -2845,10 +2760,6 @@
         menuButton.setAttribute("aria-expanded", "false");
         menuButton.setAttribute("aria-label", "Open navigation menu");
       }
-
-      // -------------------------------------------------------
-      // Header and active navigation
-      // -------------------------------------------------------
       function handleScroll() {
         header.classList.toggle("scrolled", window.scrollY > 18);
 
@@ -2866,10 +2777,6 @@
 
       window.addEventListener("scroll", handleScroll, { passive: true });
       handleScroll();
-
-      // -------------------------------------------------------
-      // Reveal on scroll
-      // -------------------------------------------------------
       if ("IntersectionObserver" in window) {
         const revealObserver = new IntersectionObserver((entries, observer) => {
           entries.forEach((entry) => {
@@ -2892,10 +2799,6 @@
           element.classList.add("visible");
         });
       }
-
-      // -------------------------------------------------------
-      // Project filtering
-      // -------------------------------------------------------
       filterButtons.forEach((button) => {
         button.addEventListener("click", () => {
           const filter = button.dataset.filter;
@@ -2909,10 +2812,6 @@
           });
         });
       });
-
-      // -------------------------------------------------------
-      // Project modal data
-      // -------------------------------------------------------
       const projectData = {
         ocilytics: {
           role: "Full-Stack Developer · Capstone Project",
@@ -3010,10 +2909,6 @@
           if (modal.classList.contains("open")) closeProjectModal();
         }
       });
-
-      // -------------------------------------------------------
-      // Contact form (mailto — no backend required)
-      // -------------------------------------------------------
       contactForm.addEventListener("submit", (event) => {
         event.preventDefault();
 
@@ -3036,10 +2931,6 @@
         window.clearTimeout(toastTimer);
         toastTimer = window.setTimeout(() => toast.classList.remove("show"), 2600);
       }
-
-      // -------------------------------------------------------
-      // Footer year
-      // -------------------------------------------------------
       document.getElementById("currentYear").textContent = new Date().getFullYear();
     })();
   </script>
