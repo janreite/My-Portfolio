@@ -639,6 +639,17 @@
         var(--surface-2);
     }
 
+
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      min-height: 365px;
+      object-fit: contain;
+      object-position: center bottom;
+      display: block;
+      background: var(--surface-2);
+    }
+
     .monogram-wrap {
       position: relative;
       display: grid;
@@ -1101,13 +1112,16 @@
 
     .project-visual {
       position: relative;
-      display: flex;
+      display: grid;
+      width: 100%;
+      aspect-ratio: 16 / 9;
       min-height: 245px;
       overflow: hidden;
-      align-items: center;
-      justify-content: center;
+      place-items: center;
+      padding: 16px;
       border-bottom: 1px solid var(--border);
       isolation: isolate;
+      background: var(--surface-2);
     }
 
     .project-card:nth-child(1) .project-visual {
@@ -1126,38 +1140,23 @@
       background: linear-gradient(135deg, rgba(251, 191, 36, 0.23), rgba(110, 231, 216, 0.08)), var(--surface-2);
     }
 
-    .project-visual::before,
-    .project-visual::after {
-      position: absolute;
-      content: "";
-      border-radius: 50%;
-      filter: blur(1px);
-    }
-
-    .project-visual::before {
-      top: -50px;
-      right: -45px;
-      width: 160px;
-      height: 160px;
-      border: 1px solid rgba(255, 255, 255, 0.13);
-    }
-
-    .project-visual::after {
-      bottom: -70px;
-      left: -55px;
-      width: 190px;
-      height: 190px;
-      border: 1px solid rgba(255, 255, 255, 0.10);
-    }
-
     .project-image {
-      width:100%;
-      height:245px;
-      object-fit:cover;
-      display:block;
-      transition:transform 400ms ease;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      border-radius: 14px;
+      background: var(--surface-solid);
     }
-    .project-card:hover .project-image{transform:scale(1.04);}
+
+    .project-card:hover .project-image {
+      transform: none;
+    }
 
     .project-mockup {
       position: relative;
@@ -1771,6 +1770,18 @@
         grid-template-columns: 1fr;
         gap: 18px;
         margin-bottom: 36px;
+      }
+
+
+      .project-visual {
+        min-height: 200px;
+        padding: 10px;
+      }
+
+      .project-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
 
       .about-grid,
